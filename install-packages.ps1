@@ -1,7 +1,7 @@
 # before you do some thing, install git https://git-scm.com
 # scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
 
-scoop add bucket extras
+scoop bucket add extras
 scoop install vcredist `
               vcredist2022 `
               pwsh `
