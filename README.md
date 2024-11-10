@@ -32,4 +32,12 @@ $HOME/_vimrc
 cp -Force ./_vimrc $HOME/_vimrc
 ```
 
+## IdeaVim Setup
+
+$HOME/.ideavimrc
+
+```pwsh
+cp -Force ./.ideavimrc $HOME/.ideavimrc
+```
+
 ###### 경로 역슬래쉬 개킹받음

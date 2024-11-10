@@ -1,0 +1,61 @@
+let mapleader = " "
+
+"" Source your .vimrc
+"source ~/.vimrc
+
+set ideajoin
+set NERDTree
+"set sneak
+"set quickscope
+"set easymotion
+
+inoremap jk <ESC>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>aq :qa<CR>
+
+vnoremap x "_x
+nnoremap x "_x
+vnoremap p "_dp
+vnoremap P "_dP
+
+nnoremap - <C-x>
+nnoremap + <C-a>
+
+set clipboard=unnamed
+set clipboard+=ideaput
+set showmode
+set showcmd
+set scrolloff=16
+
+vnoremap > >gv
+vnoremap < <gv
+
+vnoremap ( c()<ESC>P
+vnoremap [ c[]<ESC>P
+vnoremap { c{}<ESC>P
+
+nnoremap <C-3> ciw#{}<ESC>P
+
+map <M-g> <Action>(Generate)
+map <C-,> <Action>(ShowSettings)
+map <C-S-,> <Action>(ShowProjectStructureSettings)
+map <M-q> <Action>(CloseEditor)
+map <M-a><M-q> <Action>(CloseAllEditor)
+map <M-h> <Action>(PreviousTab)
+map <M-l> <Action>(NextTab)
+map <M-n> <Action>(MethodDown)
+map <M-S-n> <Action>(MethodUp)
+map <M-S-j> <Action>(MoveLineDown)
+map <M-S-k> <Action>(MoveLineUp)
+
+map <Leader>ru <Action>(Run)
+map <Leader>rd <Action>(Debug)
+map <Leader>rr <Action>(UpdateRunningApplication)
+map <Leader>r, <Action>(RunMenu)
+map <Leader>t <Action>(ActivateTerminalToolWindow)
+map <M-S-f> <Action>(NewScratchFile)
+map <Leader>ff <Action>(ReformatCode)
+map <Leader>b <Action>(ToggleLineBreakpoint)
+map <Leader>ef <Action>(RenameFile)
+map <Leader>ee <Action>(RenameElement)
+map <Leader><Space> <Action>(GotoAction)
