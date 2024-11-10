@@ -7,6 +7,15 @@ in $PROFILE file
 . $HOME/Projects/dotfiles-windows/_profile.ps1
 ```
 
+## Basic Packages
+
+```pwsh
+. ./install-packages.ps1
+nvm install lts # chage version you need
+nvm use 22.11.0
+npm i -g typescript-language-server
+```
+
 ## VSCode User Config Files Path
 
 $env:AppData/Code/User
