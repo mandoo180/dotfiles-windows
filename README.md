@@ -16,4 +16,20 @@ $env:AppData/Code/User
 cp -r -Force ./code/*.json $env:AppData/Code/User
 ```
 
+## Aalacritty Setup
+
+$env:AppData/alacritty/alacritty.toml
+
+```pwsh
+cp -Force ./alacritty/alacritty.toml $env:AppData/alacritty
+```
+
+## Vim Setup
+
+$HOME/_vimrc
+
+```pwsh
+cp -Force ./_vimrc $HOME/_vimrc
+```
+
 ###### 경로 역슬래쉬 개킹받음
